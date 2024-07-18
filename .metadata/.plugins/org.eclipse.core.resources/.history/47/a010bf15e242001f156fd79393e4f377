@@ -1,0 +1,25 @@
+package strings;
+
+import java.util.Scanner;
+
+//Check Palindrome
+public class Palindrome {
+	public static void main(String[] args) {
+		
+		String s1, s2 = "";
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter a String");
+		s1 = sc.next();
+		
+		int l = s1.length();
+		
+		System.out.println(l);
+		
+		for(int i = l-1 ; i>=0 ; i--) {
+			s2 = s2 + s1.charAt(i);
+		}
+		System.out.println(s2);
+	}
+
+}

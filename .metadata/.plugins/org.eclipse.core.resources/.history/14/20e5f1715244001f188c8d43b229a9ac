@@ -1,0 +1,14 @@
+package strings;
+
+public class DuplicateCharacters {
+	
+	public static void main(String[] args) {
+		
+		String str = "hello I am Natso";
+		
+		char arr[] = str.toCharArray();
+		
+		System.out.println(arr);
+	}
+
+}

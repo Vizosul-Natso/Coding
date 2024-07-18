@@ -1,0 +1,29 @@
+package Basic;
+
+public class PrimeNumList {
+    public static void main(String[] args) {
+        int N = 10; // Example: Find the 10th prime number
+        int count = 0;
+        int num = 1;
+        int nthPrime = 0;
+        
+        while (count < N) {
+            num++;
+            if (isPrime(num)) {
+                count++;
+                nthPrime = num;
+            }
+        }
+        
+        System.out.println("The " + N + "th prime number is: " + nthPrime);
+    }
+
+    public static boolean isPrime(int num) {
+        if (num <= 1) return false; // 1 and less are not prime numbers
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) return false;
+        }
+        return true;
+    }
+}
+

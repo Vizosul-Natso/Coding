@@ -1,0 +1,16 @@
+package strings;
+
+public class FormatingStrings {
+	
+	public static void main(String[] args) {
+		
+		String name = "Natso";
+		int age = 27;
+		String role = "Developer";
+		
+		String formated = String.format("Hello! I am %s. \n I am %d years old. I am a %s", name, age, role);
+		System.out.println(formated);
+		
+	}
+
+}

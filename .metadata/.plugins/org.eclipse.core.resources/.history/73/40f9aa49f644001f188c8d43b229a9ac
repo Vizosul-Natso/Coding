@@ -1,0 +1,43 @@
+package Basic;
+
+import java.util.Scanner;
+
+public class PrimeNumList {
+	public static void main(String[] args) {
+		
+		int num, counter=0;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the No of Prime No");
+		num = sc.nextInt();	
+		
+		while(counter<num) {
+			
+			for(int i=2 ; counter <num ;i++ ) {
+				int x = isPime(i);
+				if(x == 0) {
+					System.err.println(i);
+				}
+			}
+			counter++;
+		}
+	}
+	
+	public static int isPime(int x) {
+		int count = 0;
+		if(x<=1) {
+			count = 1;
+		}
+		for(int i =2 ; i <= Math.sqrt(x); i++) {
+			if(x % i == 0) {
+				count =1;
+			}
+		}
+		return count;		
+	}
+
+
+
+}
+

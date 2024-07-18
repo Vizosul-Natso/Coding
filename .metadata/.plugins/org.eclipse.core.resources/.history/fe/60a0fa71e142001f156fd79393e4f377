@@ -1,0 +1,18 @@
+package strings;
+
+import java.util.Scanner;
+
+//Check Palindrome
+public class Palindrome {
+	public static void main(String[] args) {
+		
+		String s1, s2;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter a String");
+		s1 = sc.next();
+		
+		System.out.println(s1);
+	}
+
+}
