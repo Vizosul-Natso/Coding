@@ -25,12 +25,6 @@ public class ReverseEachWord {
 				
 			
 		}
-		int currentWordEnd = i - 1;
-		String reversedWord = "";
-		for(int j = currentWordEnd; j >= currentWordStart ; j--) {
-			reversedWord += str.charAt(j);
-		}
-		ans += reversedWord;
 		
 		return ans;
 	}

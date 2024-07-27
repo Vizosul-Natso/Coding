@@ -1,0 +1,26 @@
+package strings;
+
+public class ReverseEachWord {
+	
+	public static void main(String[] args) {
+		
+		String str = "java is fun";
+		String revStr = "";
+			
+		for(int i = 0; i <=str.length() - 1 ; i++) {
+			
+				if(str.charAt(i) == ' ') {
+					for(int j = i -1; j <= 0; j--  ) {
+					revStr = revStr + str.charAt(j) ;
+					System.out.println(str.charAt(j));
+					}
+				}else {
+					revStr = revStr + " " ;
+				}
+		}
+		
+		System.out.println("The reversed is : "+revStr);
+		
+	}
+
+}
