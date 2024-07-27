@@ -1,0 +1,18 @@
+package patterns;
+
+public class Triangle {
+	public static void main(String[] args) {
+		
+		int col = 5 , row = 0 ;
+		
+		for(int i=0; i<col; i++) {
+			
+			while(row <= col) {
+				System.out.print("*");
+				row++;
+			}
+			
+		}		
+	}
+
+}

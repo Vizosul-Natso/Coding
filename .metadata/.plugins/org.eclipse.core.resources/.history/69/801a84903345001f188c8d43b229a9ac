@@ -1,0 +1,18 @@
+package patterns;
+
+public class RightTraingle {
+	public static void main(String[] args) {
+		
+		int n=6;
+		
+		for(int i = 0; i < n ; i++) {
+			
+			for(int y = n; y >= 1 ; y-- ) {
+				System.out.print("*");
+			}
+			
+			System.out.println();
+		}
+	}
+
+}

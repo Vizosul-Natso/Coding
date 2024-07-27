@@ -1,0 +1,29 @@
+package patterns;
+
+public class Pattern11 {
+	
+	public static void main(String[] args) {
+		
+		int n = 4;
+		int i = 1;
+		int s = 1;
+		while(i <= n) {
+			
+			while(s <= n - i) {
+				System.out.print(" ");
+				s++;
+			}
+			
+			int star = 1;
+			while(star <= i) {
+				System.out.print("*");
+				star++;
+			}
+			
+			System.out.println();
+			i = i + 1;
+		}
+		
+	}
+
+}

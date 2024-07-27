@@ -1,0 +1,15 @@
+package patterns;
+
+public class Triangle {
+	public static void main(String[] args) {
+		
+		int col = 5 , row = 0 ;
+		
+		while(row <= col) {
+			System.out.print("*");
+			row++;
+		}
+		
+	}
+
+}
