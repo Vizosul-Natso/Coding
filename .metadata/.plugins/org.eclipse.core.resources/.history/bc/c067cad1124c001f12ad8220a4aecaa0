@@ -1,0 +1,30 @@
+package strings;
+
+public class PrintAllSubStrings2 {
+	
+	public static void printSubstrings(String str) {
+		
+		for(int l = 0; l < str.length(); l++) {
+			
+			for(int s = 0 ; s < str.length()-1; s++) {
+				
+				for(int e = l - s; e < str.length();e++) {
+					
+					System.out.println(str.substring(s,e+1));
+				}
+			}
+			
+			
+		}
+
+	}
+	
+	public static void main(String[] args) {
+		
+		String str = "pqrs";
+		printSubstrings(str);
+		
+		
+	}
+
+}

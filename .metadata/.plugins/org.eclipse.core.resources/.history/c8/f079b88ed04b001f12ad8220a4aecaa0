@@ -1,0 +1,14 @@
+package strings;
+
+public class StringBasics {
+	
+	public static void main(String[] args) {
+		char arr[] = {'c','o','d','i','n','g'};
+		String str ="coding";
+		String empty = "";
+		System.out.println(str.length());
+		System.out.println(empty.length());
+		
+	}
+
+}
